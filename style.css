@@ -18,11 +18,11 @@ body {
 }
 
 .content {
-    font-family: "EB Garamond", serif;
+    font-family: "Computer Modern", serif;
 }
 
 .content h1,h2,h3,h4,h5,a {
-    font-family: "EB Garamond", serif;
+    font-family: "Computer Modern", serif;
 }
 
 .no-bullets {
