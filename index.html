@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
@@ -8,31 +7,20 @@
     <meta name="MobileOptimized" content="320">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="referrer" content="no-referrer">
-
-
-
-
     <meta name="description" content="Shehin's projects, blogs, security research, open source code, and stuff.">
-
     <link rel="canonical" href="https://www.sheh.in/">
-
     <meta property="og:locale" content="en_GB">
     <meta property="og:type" content="website">
     <meta property="og:title" content="Shehin">
     <meta property="og:description"
         content="Shehin">
-
     <meta property="og:url" content="https://www.sheh.in/">
-
     <meta property="og:site_name" content="Shehin KT">
     <meta name="twitter:description"
         content="Shehin, blogs, security research, open source code, and stuff.">
     <meta name="twitter:title" content="Shehin KT">
     <meta name="twi tter:site" content="@shehinkt">
     <meta name="twitter:creator" content="@shehinkt">
-
-
-
     <title>Mohammed Shehin KT</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet"
@@ -42,7 +30,6 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
     <script>hljs.highlightAll();</script>
-
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap"
@@ -56,46 +43,77 @@
     
       gtag('config', 'G-MJPP4PF77R');
     </script>
+    <style>
+        .divider {
+            height: 1px;
+            background-color: #333;
+            margin: 45px 0 30px 0;
+            opacity: 0.3;
+        }
 
+        h1, p, .social-links {
+            margin-top: 12px;
+            margin-bottom: 0;
+            line-height: 1.2;
+        }
 
+        h1 {
+            margin-top: 0 !important;
+        }
+
+        .social-links {
+            font-size: 13px;
+        }
+    </style>
 </head>
-
 <body>
-    <div class="content">
-
-        <h1 style="font-size: 31px; margin-bottom: 0px;">Mohammed Shehin KT</h1>
-
-        <p style="font-size: 18px; font-weight: 450; margin: 0; margin-top: -2px;">Engineering undergrad @<a style="font-size: 20px;"
-                href="https://nitc.ac.in/" title="Asterisk's website" target="_blank"><strong>nitc</strong></a></p>
-        <div style="margin-bottom: 10px; margin-top: 8px; font-size: 13px;">
-            <a style="color: rgb(52, 52, 109);" href="https://www.linkedin.com/in/shehiin" target="_blank" rel="noopener">
-                <i class="fa-brands fa-linkedin"></i>
-            </a>
-            &nbsp
-            <a style="color: rgb(47, 47, 47);" href="https://x.com/shehiin" target="_blank" rel="noopener">
-                <i class="fa-brands fa-x-twitter"></i>
-            </a>
-            &nbsp
-            <a style="color: rgb(47, 47, 47);" href="https://www.instagram.com/shehiiin" target="_blank" rel="noopener">
-                <i class="fa-brands fa-instagram"></i>
-            </a>
-            &nbsp
-            <a style="color: rgb(47, 47, 47);" href="https://github.com/shehiin" target="_blank" rel="noopener">
-                <i class="fa-brands fa-github"></i>
-            </a>
+  <div class="content">
+    <div class="header-container">
+      <div class="text-content">
+        <h1 class="name">Mohammed Shehin KT</h1>
+        <p class="subtitle">
+          Engineering Undergrad
+          <a href="https://nitc.ac.in/" target="_blank" rel="noopener"><strong>@NITC</strong></a>
+        </p>
+        <div class="social-links">
+          <a href="https://www.linkedin.com/in/shehiin" target="_blank" rel="noopener">
+            <i class="fa-brands fa-linkedin"></i>
+          </a>
+          <a href="https://x.com/shehiin" target="_blank" rel="noopener">
+            <i class="fa-brands fa-x-twitter"></i>
+          </a>
+          <a href="https://www.instagram.com/shehiiin" target="_blank" rel="noopener">
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+          <a href="https://github.com/shehiin" target="_blank" rel="noopener">
+            <i class="fa-brands fa-github"></i>
+          </a>
         </div>
-
-        <ul class="no-bullets">
-            <li class="sdf"><a href="/info.html">&rArr; Info</a></li>
-            <br>
-            <li><a href="/posts">&rArr; Projects</a></li>
-            <br>
-            <li><a href="/projects">&rArr; Writings</a></li>
-        </ul>
-        <br>
-
+      </div>
+      <div class="profile-container">
+        <img src="profile.jpg" alt="Profile image" class="profile-image" />
+      </div>
     </div>
 
+    <div class="divider"></div>
+
+    <!-- Info Section -->
+    <details open>
+      <summary><span class="bullet"></span><span class="section-title">Info</span></summary>
+      <p class="section-content">
+        Student at NIT Calicut, majoring in Production Engineering under the Dept. of Mechanical Engineering. Minor in Electric Vehicles and Smart Mobility. Interested in Robotics, Automobiles, and Physics.       </p>
+    </details>
+
+    <!-- Projects Section -->
+    <details open>
+      <summary><span class="bullet"></span><span class="section-title">Projects</span></summary>
+    </details>
+
+    <!-- Writings Section -->
+    <details open>
+      <summary><span class="bullet"></span><span class="section-title">Writings</span></summary>
+    </details>
+  </div>
 </body>
 
 </html>
