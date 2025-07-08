@@ -365,11 +365,6 @@ details[open] summary {
         text-align: center;
     }
 
-    .subtitle {
-        font-size: 13px;
-        margin-bottom: 1px;
-        text-align: center;
-    }
 
     .social-links {
         display: flex;
