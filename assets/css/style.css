@@ -107,6 +107,14 @@ details[open] summary {
     list-style-position: outside;
 }
 
+.news-list li {
+    margin-bottom: 20px;   
+}
+.news-list li:last-child {
+    margin-bottom: 0;      
+}
+
+
 .header-container {
     display: flex;
     justify-content: space-between;
