@@ -1,1 +1,133 @@
-wait a little
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="320">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A metal arm that sometimes grabs things.">
+    <link rel="canonical" href="https://www.sheh.in/work/manipulator.html">
+    <meta property="og:locale" content="en_GB">
+    <link rel="icon" href="../assets/favicon.ico" type="image/x-icon">
+    <meta property="og:image" content="https://sheh.in/assets/icon_large.png">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content="https://sheh.in/assets/icon_large.png">
+
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Robotic Manipulator - Shehin">
+    <meta property="og:description" content="Basically an SO-100 but metal.">
+    <meta name="twitter:description" content="Basically an SO-100 but metal.">
+    <title>Robotic Manipulator - Mohammed Shehin</title>
+    <link rel="icon" type="image/png" href="../assets/icon.png">
+    <link rel="stylesheet" href="../assets/css/style.css?v=2">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/base16/gruvbox-light-hard.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+    <script>hljs.highlightAll();</script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap"
+        rel="stylesheet">
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-MJPP4PF77R"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-MJPP4PF77R');
+    </script>
+
+</head>
+
+<body>
+    <div class="content">
+        <a href="../index.html" class="back-link"><i class="fa-solid fa-arrow-turn-up fa-rotate-270"></i> Home</a>
+
+        <div class="header-container">
+            <div class="text-content" style="text-align: left;">
+                <h1 class="name">Robotic Manipulator</h1>
+
+                <div class="social-links" style="margin-top: 10px;">
+                    <a href="https://github.com/shehiin/manipulator" target="_blank" rel="noopener">
+                        <i class="fa-brands fa-github"></i> Repository
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="divider"></div>
+
+        <div class="section-static">
+
+
+
+            <div class="section-header"><span class="bullet"></span><span class="section-title">The Gist</span></div>
+            <p class="section-content">
+                It's basically an <a href="https://huggingface.co/docs/lerobot/en/so100" target="_blank"
+                    rel="noopener">SO-100</a> but I made it out of metal because... well, I had some aluminum lying
+                around.
+            </p>
+
+            <div class="section-header"><span class="bullet"></span><span class="section-title">Stats</span></div>
+            <p class="section-content">
+                Run all the standard LeRobot policies without much fuss.
+            </p>
+            <ul class="section-content hardware-list">
+                <li><strong>Motors:</strong> <a href="https://www.waveshare.com/st3215-servo.htm" target="_blank"
+                        rel="noopener">ST3215</a></li>
+                <li><strong>Construction:</strong> 20x20 Aluminum extrusions.</li>
+                <li><strong>Printed Parts:</strong> PLA/PETG (Anything which supports the heavy metal).</li>
+            </ul>
+
+            <div class="section-header"><span class="bullet"></span><span class="section-title">How to Build</span>
+            </div>
+            <p class="section-content">
+                1. Buy the motors.<br>
+                2. Find some scrap 2020 extrusions.<br>
+                3. Print the holders (Files in repo).<br>
+                4. Assemble.<br>
+            </p>
+
+            <!-- Inference Section -->
+            <div class="section-header"><span class="bullet"></span><span class="section-title">Inference</span></div>
+            <div class="section-content">
+                <ul style="margin-top: 0; padding-left: 12px; list-style-type: disc; margin-bottom: 5px;">
+                    <li>
+                        <a href="https://huggingface.co/docs/lerobot/en/smolvla"
+                            style="font-weight: bold; color: var(--accent);">SmolVLA</a>
+                    </li>
+                </ul>
+                <video class="work-video" autoplay loop muted playsinline controls>
+                    <source src="../assets/smolvla.m4v" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <div class="img-caption">Trained to pick up pens. Sometimes it gets ambitious and tries to grab
+                    the table.</div>
+            </div>
+
+            <div class="section-header"><span class="bullet"></span><span class="section-title">Software</span></div>
+            <p class="section-content">
+                It runs entirely on the <a href="https://github.com/huggingface/lerobot">LeRobot</a> stack. Training
+                happens on whatever GPU you can beg, borrow, or steal.
+            </p>
+
+            <div class="section-header"><span class="bullet"></span><span class="section-title">Teleoperation</span>
+            </div>
+            <p class="section-content">
+                I also wrote a custom <a href="https://github.com/shehiin/manipulator">teleoperation method</a> using an
+                Xbox controller to eliminate the need for a second "leader" robot arm. Using an additional robot just
+                for
+                teleop seemed wasteful.
+            </p>
+
+        </div>
+    </div>
+</body>
+
+</html>
